@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import { Briefcase, Globe, Handshake, ChevronDown } from "lucide-react";
+import { Briefcase, Globe, Handshake } from "lucide-react";
 
 // Traductions
 const translations = {
@@ -299,18 +299,22 @@ export default function Home() {
         <div className="relative w-full h-full flex items-center">
           {/* Logo mobile centré */}
           <div className="flex justify-center items-center h-full md:hidden">
-            <img
+            <Image
               src="/EUCOMEA-logo.png"
               alt="Logo Eucomea"
+              width={250}
+              height={100}
               className="w-[250px] max-w-[80vw] h-auto transition-all duration-500 cursor-pointer mx-auto"
               onClick={() => window.location.href = '/'}
             />
           </div>
           {/* Logo desktop aligné à gauche */}
           <div className="hidden md:flex items-center h-full ml-8">
-            <img
+            <Image
               src="/EUCOMEA-logo.png"
               alt="Logo Eucomea"
+              width={450}
+              height={180}
               className="w-[450px] max-w-[90vw] h-auto transition-all duration-500 cursor-pointer"
               onClick={() => window.location.href = '/'}
             />
