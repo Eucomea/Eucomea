@@ -36,8 +36,8 @@ const translations = {
     about: {
       title: "À propos / Nos valeurs",
       description: "Une équipe franco-coréenne, experte en communication et en stratégie business entre l'Asie et l'Europe.",
-      founder: "Seoyoung Jeong",
-      founderTitle: "Fondatrice – Experte interculturelle & marketing stratégique"
+      founder: "Jeong Seoyoung & Rihm Gauthier",
+      founderTitle: "Co-fondateurs – Experts interculturels & marketing stratégique"
     },
     cta: {
       title: "Envie de développer votre présence en Europe ?",
@@ -45,7 +45,10 @@ const translations = {
     },
     footer: {
       address: "Adresse",
-      addressValue: "Metz, France",
+      addressValue: "60 rue François 1er, 75008 Paris, France",
+      company: "EUCOMEA SAS",
+      siret: "SIRET 98927644900018",
+      rcs: "RCS Paris 989 276 449",
       email: "Email",
       phone: "Téléphone",
       languages: "Langues"
@@ -93,8 +96,8 @@ const translations = {
     about: {
       title: "About / Our Values",
       description: "A Franco-Korean team, expert in communication and business strategy between Asia and Europe.",
-      founder: "Seoyoung Jeong",
-      founderTitle: "Founder – Intercultural & Strategic Marketing Expert"
+      founder: "Jeong Seoyoung & Rihm Gauthier",
+      founderTitle: "Co-founders – Intercultural & Strategic Marketing Experts"
     },
     cta: {
       title: "Want to develop your presence in Europe?",
@@ -102,7 +105,10 @@ const translations = {
     },
     footer: {
       address: "Address",
-      addressValue: "Metz, France",
+      addressValue: "60 rue François 1er, 75008 Paris, France",
+      company: "EUCOMEA SAS",
+      siret: "SIRET 98927644900018",
+      rcs: "RCS Paris 989 276 449",
       email: "Email",
       phone: "Phone",
       languages: "Languages"
@@ -150,8 +156,8 @@ const translations = {
     about: {
       title: "소개 / 가치관",
       description: "아시아와 유럽 간의 커뮤니케이션과 비즈니스 전략 전문 프랑코-코리안 팀",
-      founder: "정서영",
-      founderTitle: "창립자 – 문화간 커뮤니케이션 및 전략적 마케팅 전문가"
+      founder: "정서영 & 리임 고티에",
+      founderTitle: "공동 창립자 – 문화간 커뮤니케이션 및 전략적 마케팅 전문가"
     },
     cta: {
       title: "유럽에서의 사업 확장을 원하시나요?",
@@ -159,7 +165,10 @@ const translations = {
     },
     footer: {
       address: "주소",
-      addressValue: "메츠, 프랑스",
+      addressValue: "60 rue François 1er, 75008 Paris, France",
+      company: "EUCOMEA SAS",
+      siret: "SIRET 98927644900018",
+      rcs: "RCS Paris 989 276 449",
       email: "이메일",
       phone: "전화",
       languages: "언어"
@@ -448,7 +457,7 @@ export default function Home() {
           </p>
           <div className="bg-gradient-to-br from-white/90 to-[#fbfbe4]/90 rounded-3xl p-12 max-w-2xl mx-auto shadow-xl border border-[#3d75a3]/10">
             <div className="w-32 h-32 bg-gradient-to-br from-[#3d75a3]/20 to-[#2c5a7a]/20 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl shadow-lg">
-              👩‍💼
+              👥
             </div>
             <h3 className="text-2xl font-semibold mb-3 text-[#3d75a3]">{t.about.founder}</h3>
             <p className="text-[#3d75a3]/80 text-lg">{t.about.founderTitle}</p>
@@ -477,9 +486,15 @@ export default function Home() {
             <div className="md:col-span-4 flex flex-col md:flex-row items-center justify-center md:justify-between text-xs sm:text-sm gap-2 md:gap-6">
               <span>{t.footer.address} : {t.footer.addressValue}</span>
               <span>•</span>
+              <span>{t.footer.company}</span>
+              <span>•</span>
+              <span>{t.footer.siret}</span>
+              <span>•</span>
+              <span>{t.footer.rcs}</span>
+              <span>•</span>
               <span>{t.footer.email} : <a href="mailto:contact@eucomea.com" className="underline">contact@eucomea.com</a></span>
               <span>•</span>
-              <span>{t.footer.phone} : <a href="tel:+33749353767" className="underline">+33 7 49 35 37 67</a></span>
+              <span>{t.footer.phone} : <a href="tel:+33749353767" className="underline">+33 7 49 35 37 67</a> | <a href="tel:+33645299011" className="underline">+33 6 45 29 90 11</a></span>
               <span>•</span>
               <span>{t.footer.languages} : 🇫🇷 🇰🇷 🇬🇧</span>
             </div>

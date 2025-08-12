@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Eucomea - Enter Europe with Ease",
-  description: "Accompagnement stratégique et interculturel pour les entreprises coréennes en Europe.",
+  description: "Accompagnement stratégique et interculturel pour les entreprises coréennes en Europe. EUCOMEA SAS - 60 rue François 1er, 75008 Paris.",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
